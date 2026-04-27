@@ -3,7 +3,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, fil
 
 import os
 TOKEN = os.getenv(Use this token to access the HTTP API:
-8749069543:AAHfR9w954N-XbTVLjSnmY1IhH2MkPLNe0EA)
+8749069543:AAHfR9w954NXbTVLjSnmY1IhH2MkPLNe0EA)
 
 keyboard = [
     ["💰 شراء", "📊 الأسعار"],
@@ -12,7 +12,17 @@ keyboard = [
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        "مرحبا بك 👋",
+        "  🚀 مرحبا بك في Pedro Exchange  
+
+💱 بيع وشراء USDT بسرعة وأمان 🔒  
+
+📌 خدماتنا:  
+• شراء USDT 💰  
+• بيع USDT 💸  
+• أسعار مباشرة 📊  
+• دعم سريع 🤝  
+
+👇 اختر الخدمة لي تناسبك:",
         reply_markup=ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
     )
 
