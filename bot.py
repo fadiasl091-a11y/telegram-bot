@@ -1,7 +1,9 @@
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
-TOKEN = "PUT_YOUR_TOKEN"
+import os
+TOKEN = os.getenv(Use this token to access the HTTP API:
+8749069543:AAHfR9w954N-XbTVLjSnmY1IhH2MkPLNe0EA)
 
 keyboard = [
     ["💰 شراء", "📊 الأسعار"],
